@@ -9,6 +9,8 @@
 ! Ctrl-Up    -> Increase Font
 ! Ctrl-Down  -> Decrease Font
 ! Ctrl+Print -> Save buffer in $HOME/urxvt
+!
+! Alt + s    -> Search in scrollback
 
 ! para activar tabbed -> urxvt -pe tabbed
 ! Shift-Right-Left -> switch the tab
@@ -109,6 +111,10 @@ URxvt.cursorUnderline: true
 ! Pointer
 URxvt.pointerBlank: true
 
+! disable ctrl+shift binding
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
 URxvt.scrollstyle: rxvt
 URxvt.scrollBar: false
@@ -146,7 +152,7 @@ URxvt.tabbed.title: no
 URxvt.print-pipe: cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
 
 !urxvt extensions:
-URxvt.perl-ext-common: selection-to-clipboard,font-size,fullscreen
+URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fullscreen
 
 !Font size dinamicaly (font-size)
 !https://github.com/majutsushi/urxvt-font-size
@@ -160,7 +166,11 @@ URxvt.keysym.C-9:      font-size:show
 
 URxvt.font-size.step: 2
 
+! To work # apt-get install wmctrl
 URxvt.keysym.F11:	perl:fullscreen:switch
+
+! To search in scrollbar default key is: Alt+s
+!URxvt.searchable-scrollback: F10
 
 !(C-1: Ctrl + Alt)
 !(C-minus: Cltr + -)
@@ -177,3 +187,4 @@ URxvt.keysym.F11:	perl:fullscreen:switch
 !urxvt.keysym.Control-Down:  \033[1;5B
 !urxvt.keysym.Control-Left:  \033[1;5D
 !urxvt.keysym.Control-Right: \033[1;5C
+!
