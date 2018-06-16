@@ -104,9 +104,9 @@ URxvt.keysym.C-4: command:\033]710;xft:Ubuntu Mono:style=Regular:pixelsize=14\00
 URxvt.keysym.C-5: command:\033]710;-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1\007
 
 ! Cursor
-URxvt.cursorBlink: true
-URxvt.cursorColor: #00FF00
-URxvt.cursorUnderline: true
+URxvt.cursorBlink: false
+URxvt.cursorColor: #FF00FF
+URxvt.cursorUnderline: false
 
 ! Pointer
 URxvt.pointerBlank: true
