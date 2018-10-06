@@ -26,6 +26,8 @@
 ! 713;  -> set bold/italic font
 ! \077  -> end command
 
+!Para que no suene el beep tan molesto de la terminal, en vez de eso parpadea la pantalla
+URxvt.visualBell: true
 
 !-------------------------------------------------------------------------------
 ! Xft settings
