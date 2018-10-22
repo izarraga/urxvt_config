@@ -82,15 +82,15 @@ URxvt.color15 : #FFFFFF
 
 ! Fonts
 URxvt.allow_bold:     false
-URxvt.font:           xft:Courier 10 Pitch:pixelsize=14
-URxvt.boldFont:       xft:Courier 10 Pitch:pixelsize=14
-URxvt.italicFont:     xft:Courier 10 Pitch:pixelsize=14
-URxvt.boldItalicFont: xft:Courier 10 Pitch:pixelsize=14
+URxvt.font:           xft:Courier 10 Pitch:pixelsize=16
+URxvt.boldFont:       xft:Courier 10 Pitch:pixelsize=16
+URxvt.italicFont:     xft:Courier 10 Pitch:pixelsize=16
+URxvt.boldItalicFont: xft:Courier 10 Pitch:pixelsize=16
 
 ! Fix font space
 URxvt.letterSpace: -2
 
-URxvt.keysym.Control-1: command:\033]710;xft:Courier 10 Pitch:pixelsize=14:autohint=false\007
+URxvt.keysym.Control-1: command:\033]710;xft:Courier 10 Pitch:pixelsize=16:autohint=false\007
 URxvt.keysym.Control-2: command:\033]710;xft:bitstream vera sans mono:size=12:antialias=false\007
 URxvt.keysym.Control-3: command:\033]710;xft:Monospace:pixelsize=14:autohint=false\007
 URxvt.keysym.Control-4: command:\033]710;xft:Ubuntu Mono:style=Regular:pixelsize=14\007
@@ -156,12 +156,12 @@ URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fu
 !https://github.com/majutsushi/urxvt-font-size
 !Control-minus = Control-0x2b (Ctrl + -)
 !Control-plus  = Control-0x2d (Ctrl + +)
-URxvt.keysym.Control-Up:         font-size:increase
-URxvt.keysym.Control-Down:       font-size:decrease
-URxvt.keysym.Control-Shift-Up:   font-size:incglobal
-URxvt.keysym.Control-Shift-Down: font-size:decglobal
-URxvt.keysym.Control-0:          font-size:reset
-URxvt.keysym.Control-9:          font-size:show
+URxvt.keysym.Control-Up:    font-size:increase
+URxvt.keysym.Control-Down:  font-size:decrease
+URxvt.keysym.Control-plus:  font-size:incglobal
+URxvt.keysym.Control-minus: font-size:decglobal
+URxvt.keysym.Control-0:     font-size:reset
+URxvt.keysym.Control-9:     font-size:show
 URxvt.font-size.step: 2
 
 !---------------------------------
@@ -187,11 +187,12 @@ URxvt.tabbed.title: no
 URxvt.tabbed.autohide: yes
 URxvt.tabbed.no-tabbedex-keys: yes
 
-URxvt.keysym.Control-n: perl:tabbedex:new_tab
-URxvt.keysym.Control-r: perl:tabbedex:rename_tab
-URxvt.keysym.Control-Right: perl:tabbedex:next_tab
-URxvt.keysym.Control-Left: perl:tabbedex:prev_tab
-URxvt.keysym.Control-Shift-Left: perl:tabbedex:move_tab_left
+URxvt.keysym.Control-Shift-Up:    perl:tabbedex:new_tab
+URxvt.keysym.Control-Shift-Down:  perl:tabbedex:kill_tab
+URxvt.keysym.Control-r:           perl:tabbedex:rename_tab
+URxvt.keysym.Control-Right:       perl:tabbedex:next_tab
+URxvt.keysym.Control-Left:        perl:tabbedex:prev_tab
+URxvt.keysym.Control-Shift-Left:  perl:tabbedex:move_tab_left
 URxvt.keysym.Control-Shift-Right: perl:tabbedex:move_tab_right
 
 URxvt.keysym.Meta-F1: perl:tabbedex:goto_tab_1
