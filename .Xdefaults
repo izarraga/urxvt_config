@@ -46,7 +46,7 @@ URxvt.fading:         0
 URxvt.loginShell:     false
 URxvt.meta:           ignore
 URxvt.utmpInhibit:    true
-URxvt.saveLines:      8192
+URxvt.saveLines:      30000
 ! internalBorder: espacios entre el texto y el borde de la consola
 URxvt.internalBorder: 2
 ! lineSpace: espacio entre las lineas
