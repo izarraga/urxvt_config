@@ -24,7 +24,7 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 Xft.dpi:        96
-Xft.antialias:  false
+Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 ! hintstyle: hintnone, hintslight, hintmedium, hintfull.
