@@ -28,7 +28,7 @@ Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 ! hintstyle: hintnone, hintslight, hintmedium, hintfull.
-Xft.hintstyle:  hintnone
+Xft.hintstyle:  hintfull
 Xft.autohint:   false
 Xft.lcdfilter:  lcddefault
 
@@ -38,7 +38,8 @@ Xft.lcdfilter:  lcddefault
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-------------------------------------------------------------------------------
 URxvt.termName:       rxvt-unicode
-URxvt*visualBell:     false
+URxvt.visualBell:     false
+URxvt.display:        :0
 URxvt.depth:          32
 URxvt.geometry:       120x30
 URxvt.transparent:    false
@@ -91,10 +92,10 @@ URxvt.boldItalicFont: xft:Courier 10 Pitch:pixelsize=16
 URxvt.letterSpace: -2
 
 URxvt.keysym.Control-1: command:\033]710;xft:Courier 10 Pitch:pixelsize=16:autohint=false\007
-URxvt.keysym.Control-2: command:\033]710;xft:bitstream vera sans mono:size=12:antialias=false\007
-URxvt.keysym.Control-3: command:\033]710;xft:Monospace:pixelsize=14:autohint=false\007
-URxvt.keysym.Control-4: command:\033]710;xft:Ubuntu Mono:style=Regular:pixelsize=14\007
-URxvt.keysym.Control-5: command:\033]710;-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1\007
+URxvt.keysym.Control-2: command:\033]710;xft:Monospace:pixelsize=14:autohint=false\007
+URxvt.keysym.Control-3: command:\033]710;xft:DejaVu Sans Mono:size=11\007
+URxvt.keysym.Control-4: command:\033]710;xft:Bitstream Vera Sans Mono:pixelsize=15:antialias=true\007
+URxvt.keysym.Control-5: command:\033]710;-*-fixed-medium-r-*-*-14-*-*-*-*-*-iso8859-*\007
 
 ! Cursor
 URxvt.cursorBlink: false
@@ -148,7 +149,7 @@ URxvt.print-pipe: cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
 !------------------------
 ! PERL EXTENSIONS loaded
 !------------------------
-URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fullscreen,tabbedex
+URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fullscreen,tabbedex,matcher
 
 !---------------------------------
 ! FONT-SIZE
@@ -204,4 +205,11 @@ URxvt.keysym.Meta-F6: perl:tabbedex:goto_tab_6
 URxvt.keysym.Meta-F7: perl:tabbedex:goto_tab_7
 URxvt.keysym.Meta-F8: perl:tabbedex:goto_tab_8
 URxvt.keysym.Meta-F9: perl:tabbedex:goto_tab_9
+
+!-----------------------------
+! enable URL macher
+!-----------------------------
+URxvt.urlLauncher: /opt/google/chrome/chrome
+URxvt.colorUL: #ff6600
+urxvt.matcher.button: 1
 
