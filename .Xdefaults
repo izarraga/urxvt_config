@@ -149,7 +149,8 @@ URxvt.print-pipe: cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
 !------------------------
 ! PERL EXTENSIONS loaded
 !------------------------
-URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fullscreen,tabbedex,matcher
+!URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fullscreen,tabbedex,matcher
+URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fullscreen,tabbedex
 
 !---------------------------------
 ! FONT-SIZE
@@ -159,8 +160,8 @@ URxvt.perl-ext-common: selection-to-clipboard,searchable-scrollback,font-size,fu
 !Control-plus  = Control-0x2d (Ctrl + +)
 URxvt.keysym.Control-Up:    font-size:increase
 URxvt.keysym.Control-Down:  font-size:decrease
-URxvt.keysym.Control-plus:  font-size:incglobal
-URxvt.keysym.Control-minus: font-size:decglobal
+!URxvt.keysym.Control-plus:  font-size:incglobal
+!URxvt.keysym.Control-minus: font-size:decglobal
 URxvt.keysym.Control-0:     font-size:reset
 URxvt.keysym.Control-9:     font-size:show
 URxvt.font-size.step: 2
@@ -209,7 +210,7 @@ URxvt.keysym.Meta-F9: perl:tabbedex:goto_tab_9
 !-----------------------------
 ! enable URL macher
 !-----------------------------
-URxvt.urlLauncher: /opt/google/chrome/chrome
-URxvt.colorUL: #ff6600
-urxvt.matcher.button: 1
+!URxvt.urlLauncher: /opt/google/chrome/chrome
+!URxvt.colorUL: #ff6600
+!URxvt.matcher.button: 1
 
